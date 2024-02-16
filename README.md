@@ -43,3 +43,32 @@ Critères de validation
 
     Les bonnes pratiques de nommage sont appliquées
 
+branch 00031twig
+CHALLENGE 
+    
+    Ajouter un email de contact dans un pied de page
+
+    Pour ce challenge tu repartiras du dépôt Github que tu as déjà utilisé lors de la quête précédente : https://github.com/WildCodeSchool/quest-twig
+
+    Commence par créer le fichier src/View/_footer.html.twig avec le code suivant : VOIR FICHIER FOOTER
+    </footer>
+
+    Ensuite, rends toi dans le fichier 'src/View/layout.html.twig' que tu as créé lors de la quête précédente et inclus le footer dans la balise body, juste aprés le block content
+    Va ensuite ajouter une globale comme dans l'exemple montré plus haut dans le fichier config/twig.php. Stocke dans cette globale une adresse email
+    Vérifie que sur ta page tu as maintenant bien un footer avec une adresse email de contact 🤓
+    Crée ensuite dans public un fichier details.php qui appelle une vue details.html.twig (que tu dois créer) et qui héritera de layout.html.twig
+    Vérifie que sur cette nouvelle page aussi tu as bien l'email qui apparait 🤓🤓
+    Envoie le résultat sur ton dépôt GitHub et poste le lien en solution
+
+Critères de validation
+
+    Pour corriger, clone le projet et pense à lancer un composer install si ce n'est pas déjà fait.
+
+    Il y a bien un $twig->addGlobal() dans config/twig.php pour déclarer un email de contact
+
+    Il y a bien l'inclusion du fichier src/View/_footer.html.twig dans le layout.html.twig
+
+    Le dossier vendor de ton projet n'est pas versionné sous git.
+
+
+
