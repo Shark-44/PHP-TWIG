@@ -1,15 +1,13 @@
-<!doctype html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}{% endblock %}</title>
-    <link rel="icon" href="/assets/images/favicon.png">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-</head>
+{# product.html.twig #}
+{% extends 'layout.html.twig' %}
 
-<body>
-    
+{% block title %}
+
+    Produits
+
+{% endblock %} 
+ 
+{% block content %}
     <h2>Liste des produits :</h2>
 
     <ul>
@@ -22,5 +20,5 @@
     <h2>Résultat du dump() :</h2>
     
     {{ dump(products) }}
-</body>
-</html>
+
+{% endblock %}

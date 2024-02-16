@@ -1,8 +1,11 @@
-.navbar {    
+nav {    
     background: linear-gradient(to right, #615344, grey);
 }
 .nav-list {
     display: flex;
     gap: 10px;
     justify-content: space-around;
+}
+footer {
+    background-color: grey;
 }
